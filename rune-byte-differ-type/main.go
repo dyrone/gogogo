@@ -18,6 +18,7 @@ func main() {
 		fmt.Printf("print byte with range : %v, type: %v\n", v1, reflect.TypeOf(v1))
 	}
 
+	t := []rune("aaa")
 	// uint8
 	fmt.Printf("print byte with index: %v, type: %v\n", s1[0], reflect.TypeOf(s1[0]))
 }
