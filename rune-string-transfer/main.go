@@ -1,8 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"bytes"
+	"fmt"
+)
 
 func main() {
-	//https://stackoverflow.com/questions/29255746/how-encode-rune-into-byte-using-utf8-in-golang
-	fmt.Println("vim-go")
+	rs := bytes.Runes([]byte("go gopher 哈哈"))
+	for _, r := range rs {
+		fmt.Printf("%#U\n", r)
+	}
 }
