@@ -45,6 +45,7 @@ func main() {
 	go broadcast("b1", age, cond)
 
 	ch := make(chan os.Signal, 1)
+	//todo
 	signal.Notify(ch, os.Interrupt)
 	<-ch
 }
