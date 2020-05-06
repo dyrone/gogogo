@@ -5,7 +5,7 @@ import "context"
 import "time"
 
 func main() {
-	d := time.Now().Add(50 * time.Millisecond)
+	d := time.Now().Add(5000 * time.Millisecond)
 	ctx, cancel := context.WithDeadline(context.Background(), d)
 	defer cancel()
 
